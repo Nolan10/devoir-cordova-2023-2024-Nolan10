@@ -1,10 +1,12 @@
 class Application{
-    constructor(window, joueurDAO, vueListeJoueur, vueAjouterJoueur) {
+    constructor(window, joueurDAO, vueListeJoueur, vueAjouterJoueur, vueJoueur) {
         this.window = window;
         this.joueurDAO = joueurDAO
         this.vueListeJoueur = vueListeJoueur;
         this.vueAjouterJoueur = vueAjouterJoueur;
         this.vueAjouterJoueur.initialiserActionAjouterJoueur(joueur =>this.actionAjouterJoueur(joueur));
+
+        this.vueJoueur = vueJoueur;
 
         this.window.addEventListener("hashchange", () =>this.naviguer());
         this.naviguer();
@@ -23,6 +25,13 @@ class Application{
 
             this.vueAjouterJoueur.afficher();
 
+        }else{
+
+            let navigation = hash.match(/^#joueur\/([0-9]+)/);
+            let idJoueur = navigation[1];
+
+            this.vueJoueur.initialiserJoueur(this.joueurDAO.lister()[idJoueur]);
+            this.vueJoueur.afficher();
         }
     }
 
@@ -32,4 +41,4 @@ class Application{
     }
 }
 
-new Application(window, new JoueurDAO(), new VueListeJoueur(), new VueAjouterJoueur());
+new Application(window, new JoueurDAO(), new VueListeJoueur(), new VueAjouterJoueur(), new VueJoueur());
