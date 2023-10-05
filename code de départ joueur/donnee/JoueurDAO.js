@@ -43,4 +43,12 @@ class JoueurDAO {
         console.log("JSON.stringify(this.listeJoueur) : " +
             JSON.stringify(this.listeJoueur));
     }
+
+    modifier(joueur){
+        this.listeJoueur[joueur.id] = joueur;
+
+        localStorage['joueur'] = JSON.stringify(this.listeJoueur);
+        console.log("JSON.stringify(this.listeJoueur) : " +
+            JSON.stringify(this.listeJoueur));
+    }
 }

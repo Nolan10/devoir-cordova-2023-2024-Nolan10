@@ -20,6 +20,7 @@ class VueListeJoueur {
             listeJoueurItemHTMLRemplacement = listeJoueurItemHTMLRemplacement.replace("{Joueur.id}",this.listeJoueurDonnee[numeroJoueur].id);
             listeJoueurItemHTMLRemplacement = listeJoueurItemHTMLRemplacement.replace("{Joueur.nom}",this.listeJoueurDonnee[numeroJoueur].nom);
             listeJoueurItemHTMLRemplacement = listeJoueurItemHTMLRemplacement.replace("{Joueur.prenom}",this.listeJoueurDonnee[numeroJoueur].prenom);
+            listeJoueurItemHTMLRemplacement = listeJoueurItemHTMLRemplacement.replace("{Joueur.id}",this.listeJoueurDonnee[numeroJoueur].id);
             listeJoueurHTMLRemplacement += listeJoueurItemHTMLRemplacement;
         }
         listeJoueur.innerHTML = listeJoueurHTMLRemplacement;

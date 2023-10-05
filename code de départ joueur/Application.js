@@ -1,10 +1,13 @@
 class Application{
-    constructor(window, joueurDAO, vueListeJoueur, vueAjouterJoueur, vueJoueur) {
+    constructor(window, joueurDAO, vueListeJoueur, vueAjouterJoueur, vueJoueur, vueModifierJoueur) {
         this.window = window;
         this.joueurDAO = joueurDAO
         this.vueListeJoueur = vueListeJoueur;
         this.vueAjouterJoueur = vueAjouterJoueur;
+        this.vueModifierJoueur = vueModifierJoueur;
+
         this.vueAjouterJoueur.initialiserActionAjouterJoueur(joueur =>this.actionAjouterJoueur(joueur));
+        this.vueModifierJoueur.initialiserActionModifierJoueur(joueur =>this.actionModifierJoueur(joueur));
 
         this.vueJoueur = vueJoueur;
 
@@ -25,7 +28,7 @@ class Application{
 
             this.vueAjouterJoueur.afficher();
 
-        }else{
+        }else if(hash.match(/^#joueur/)){
 
             let navigation = hash.match(/^#joueur\/([0-9]+)/);
             let idJoueur = navigation[1];
@@ -33,12 +36,24 @@ class Application{
             this.vueJoueur.initialiserJoueur(this.joueurDAO.lister()[idJoueur]);
             this.vueJoueur.afficher();
         }
+        else{
+            let navigation = hash.match(/^#modifier-joueur\/([0-9]+)/);
+            let idJoueur = navigation[1];
+
+            this.vueModifierJoueur.initialiserJoueur(this.joueurDAO.lister()[idJoueur])
+            this.vueModifierJoueur.afficher();
+        }
     }
 
     actionAjouterJoueur(joueur){
         this.joueurDAO.ajouter(joueur);
         this.window.location.hash = "#";
     }
+
+    actionModifierJoueur(joueur){
+        this.joueurDAO.modifier(joueur);
+        this.window.location.hash = "#";
+    }
 }
 
-new Application(window, new JoueurDAO(), new VueListeJoueur(), new VueAjouterJoueur(), new VueJoueur());
+new Application(window, new JoueurDAO(), new VueListeJoueur(), new VueAjouterJoueur(), new VueJoueur(), new VueModifierJoueur());

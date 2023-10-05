@@ -6,8 +6,18 @@
 }
 
 @font-face {
+  font-family: 'Fifa';
+  src: url('font/fifawelcome1.3.ttf')  format('truetype');
+}
+
+@font-face {
   font-family: 'Football';
   src: url('font/SOCCER.TTF')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Nom';
+  src: url('font/no_name_37_Light.otf')  format('truetype');
 }
 
 @font-face {
@@ -31,7 +41,7 @@
 }
 
 :root {
-  --theme-rouge: #ffffff;
+  --theme-rouge: red;
   --theme-blanc-transparent: rgba(255,255,255,0.3);
   --theme-bleu-pale: rgb(15, 23, 24);
   --theme-bleu-fonce: rgba(63,155,191,1);
@@ -43,7 +53,7 @@
 }
 
 html {
-  font-family:'Cream Cake', sans-serif;
+  font-family:'Fifa', sans-serif;
   font-size:48px;
 }
 
@@ -65,7 +75,7 @@ html {
   border-radius:var(--theme-bordure-rondeur);
   padding:0.25rem;
   padding-left:1.50rem;
-  box-shadow: 2px 2px var(--theme-blanc);
+  box-shadow: 2px 2px var(--theme-rouge);
 }
 
 #liste-joueur li::before {
@@ -86,12 +96,13 @@ html {
 
 fieldset {
   color:var(--theme-blanc);
-  border-color: var(--theme-blanc);
+  border-color: var(--theme-rouge);
   border-radius:var(--theme-bordure-rondeur);
 }
 
 input[type="text"],
 textarea {
+  color: white;
   display:block;
   width:100%;
   border:none;
@@ -179,7 +190,7 @@ textarea {
   border:0px transparent solid;
   border-radius:var(--theme-bordure-rondeur);
   padding:0.25rem;
-  font-family:'Waving at Christmas', sans-serif;
+  font-family:'Nom', sans-serif;
   font-size:1rem;
   text-align:center;
   width:50%;
@@ -192,4 +203,8 @@ textarea {
 
 .action:active {
   border:0px transparent solid;
+}
+
+.img-modifier{
+  width: 2.5vw;
 }
