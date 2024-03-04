@@ -10,7 +10,6 @@ class VueJoueur{
 
     afficher(){
         document.getElementsByTagName("body")[0].innerHTML = this.html;
-
         document.getElementById("joueur-nom").innerHTML = this.joueur.nom;
         document.getElementById("joueur-prenom").innerHTML = this.joueur.prenom;
         document.getElementById("joueur-club").innerHTML = this.joueur.club;

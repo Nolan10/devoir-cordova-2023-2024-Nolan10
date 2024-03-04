@@ -1,9 +1,9 @@
 <?php
-
+header("Access-Control-Allow-Origin: *");
 include_once('../DAO/JoueurDAO.php');
 
 $utilisateurDAO = new DAO\JoueurDAO();
 
-foreach ($utilisateurDAO->getJoueurParId(1) as $joueur){
-    echo $joueur->getNomJoueur();
-}
+$util = json_encode($utilisateurDAO->getTousLesJoueurs());
+
+echo $util;

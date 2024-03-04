@@ -56,4 +56,4 @@ class Application{
     }
 }
 
-new Application(window, new JoueurDAO(), new VueListeJoueur(), new VueAjouterJoueur(), new VueJoueur(), new VueModifierJoueur());
+new Application(window, new ListeJoueursDAO(), new VueListeJoueur(), new VueAjouterJoueur(), new VueJoueur(), new VueModifierJoueur());
