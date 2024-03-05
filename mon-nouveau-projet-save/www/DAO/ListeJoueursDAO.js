@@ -50,6 +50,27 @@ class ListeJoueursDAO {
         });
     }
 
+    modifier(joueur) {
+        return new Promise((resolve, reject) => {
+            var xhr = new XMLHttpRequest();
+            var apiUrl = 'http://213.32.91.121/partiePhp-Serveur/controlleurs/JoueurControlleur.php?methode=modifier&nom=' + joueur.nom + '&prenom=' + joueur.prenom + '&club=' + joueur.club + '&nation=' + joueur.nation + '&id=' + joueur.id;
+
+            xhr.open('GET', apiUrl, true);
+
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === 4) {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        console.log("joueur Ajouté")
+                        resolve();  // Resolve the promise when the operation is complete
+                    } else {
+                        reject('La requête a échoué.');  // Reject the promise on error
+                    }
+                }
+            };
+            xhr.send();
+        });
+    }
+
 
     convertirJsonEnString(jsonInput) {
         var listeObjetsJoueurs = JSON.parse(jsonInput).map(jsonJoueur => {

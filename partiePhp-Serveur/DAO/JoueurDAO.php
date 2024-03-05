@@ -71,4 +71,12 @@ class JoueurDAO
         array_push($arguments, $nom, $prenom, $club, $nation);
         return $this->executerRequete($sql, $arguments);
     }
+
+    public function modifierJoueur($nom, $prenom, $club, $nation, $id)
+    {
+        $sql = "UPDATE joueur SET nom_joueur = ?, prenom_joueur = ?, club_joueur = ?, nation_joueur = ? WHERE id_joueur = ?;";
+        $arguments = array();
+        array_push($arguments, $nom, $prenom, $club, $nation, $id);
+        return $this->executerRequete($sql, $arguments);
+    }
 }

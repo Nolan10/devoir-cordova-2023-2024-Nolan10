@@ -42,7 +42,8 @@ class Application{
             let navigation = hash.match(/^#modifier-joueur\/([0-9]+)/);
             let idJoueur = navigation[1];
 
-            this.vueModifierJoueur.initialiserJoueur(this.joueurDAO.getListeObjetsJoueurs()[idJoueur])
+            let joueurAModifier = await this.joueurDAO.getListeObjetsJoueurs()
+            this.vueModifierJoueur.initialiserJoueur(joueurAModifier[idJoueur - 1])
             this.vueModifierJoueur.afficher();
         }
     }
