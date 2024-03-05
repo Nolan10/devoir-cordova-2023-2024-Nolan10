@@ -16,31 +16,33 @@ class Application{
 
     }
 
-    naviguer(){
+    async naviguer(){
         let hash = window.location.hash;
 
         if(!hash){
 
-            this.vueListeJoueur.initialiserListeJoueur(this.joueurDAO.lister());
+            this.vueListeJoueur.initialiserListeJoueur(await this.joueurDAO.getListeObjetsJoueurs() );
+            console.log("c'est trop tôt");
             this.vueListeJoueur.afficher();
+
 
         }else if(hash.match(/^#ajouter-joueur/)){
 
-            this.vueAjouterJoueur.afficher();
+            await this.vueAjouterJoueur.afficher();
 
         }else if(hash.match(/^#joueur/)){
 
             let navigation = hash.match(/^#joueur\/([0-9]+)/);
             let idJoueur = navigation[1];
-
-            this.vueJoueur.initialiserJoueur(this.joueurDAO.lister()[idJoueur]);
+            let joueurs = await this.joueurDAO.getListeObjetsJoueurs();
+            this.vueJoueur.initialiserJoueur(joueurs[idJoueur - 1]);
             this.vueJoueur.afficher();
         }
         else{
             let navigation = hash.match(/^#modifier-joueur\/([0-9]+)/);
             let idJoueur = navigation[1];
 
-            this.vueModifierJoueur.initialiserJoueur(this.joueurDAO.lister()[idJoueur])
+            this.vueModifierJoueur.initialiserJoueur(this.joueurDAO.getListeObjetsJoueurs()[idJoueur])
             this.vueModifierJoueur.afficher();
         }
     }

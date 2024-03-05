@@ -6,6 +6,7 @@ class VueListeJoueur {
 
     initialiserListeJoueur(listeJoueurDonnee){
         this.listeJoueurDonnee = listeJoueurDonnee;
+        console.log(listeJoueurDonnee)
     }
 
     afficher(){

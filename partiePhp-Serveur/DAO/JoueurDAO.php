@@ -63,4 +63,12 @@ class JoueurDAO
         array_push($arguments, $id);
         return $this->lireRequete($sql, $arguments);
     }
+
+    public function ajouterJoueur($nom, $prenom, $club, $nation)
+    {
+        $sql = "INSERT into joueur Values (0, ?, ?, ?, ?)";
+        $arguments = array();
+        array_push($arguments, $nom, $prenom, $club, $nation);
+        return $this->executerRequete($sql, $arguments);
+    }
 }

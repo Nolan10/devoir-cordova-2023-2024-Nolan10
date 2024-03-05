@@ -5,6 +5,7 @@ class VueJoueur{
     }
 
     initialiserJoueur(joueur){
+        console.log("c'est un joueur : "+ joueur);
         this.joueur = joueur;
     }
 

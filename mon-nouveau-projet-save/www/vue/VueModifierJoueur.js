@@ -21,7 +21,6 @@ class VueModifierJoueur{
         document.getElementById("modifier-joueur-club").value = this.joueur.club;
         document.getElementById("modifier-joueur-nation").value = this.joueur.nation;
 
-
         document.getElementById("formulaire-modifier").addEventListener("submit",evenement =>this.enregistrer(evenement));
     }
 

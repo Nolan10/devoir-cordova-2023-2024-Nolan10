@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09155c83-d1e9-4c1e-b158-963816178c51" name="Changes" comment="">
+    <list default="true" id="09155c83-d1e9-4c1e-b158-963816178c51" name="Changes" comment="Récupération des données pour afficher la liste de joueur mais problème au moment de l'affichage #2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/DAO/ListeJoueursDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/DAO/ListeJoueursDAO.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/modele/Joueur.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/modele/Joueur.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/vue/VueJoueur.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vue/VueJoueur.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/vue/VueListeJoueur.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vue/VueListeJoueur.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/vue/VueModifierJoueur.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vue/VueModifierJoueur.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../partiePhp-Serveur/DAO/JoueurDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/../partiePhp-Serveur/DAO/JoueurDAO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../partiePhp-Serveur/controlleurs/JoueurControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../partiePhp-Serveur/controlleurs/JoueurControlleur.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,32 +34,32 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2VzJOo4MQp41scoafRnfRrSng4D" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/tessier/Documents/GitHub/projet-mobile-2023-Loris3153-Hou",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/tessier/Documents/GitHub/projet-mobile-2023-Loris3153-Hou&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,11 +75,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695832945177</updated>
-      <workItem from="1709568349205" duration="6487000" />
+      <workItem from="1709568349205" duration="6906000" />
+      <workItem from="1709662335039" duration="4794000" />
     </task>
+    <task id="LOCAL-00001" summary="Récupération des données pour afficher la liste de joueur mais problème au moment de l'affichage #2">
+      <option name="closed" value="true" />
+      <created>1709584326267</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709584326267</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Récupération des données pour afficher la liste de joueur mais problème au moment de l'affichage #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Récupération des données pour afficher la liste de joueur mais problème au moment de l'affichage #2" />
   </component>
 </project>
