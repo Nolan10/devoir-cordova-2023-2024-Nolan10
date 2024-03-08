@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09155c83-d1e9-4c1e-b158-963816178c51" name="Changes" comment="Récupération des données pour afficher la liste de joueur mais problème au moment de l'affichage #2">
+    <list default="true" id="09155c83-d1e9-4c1e-b158-963816178c51" name="Changes" comment="Fonctionnalité modifier réalisée #2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/DAO/ListeJoueursDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/DAO/ListeJoueursDAO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../partiePhp-Serveur/DAO/JoueurDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/../partiePhp-Serveur/DAO/JoueurDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../partiePhp-Serveur/controlleurs/JoueurControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../partiePhp-Serveur/controlleurs/JoueurControlleur.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695832945177</updated>
       <workItem from="1709568349205" duration="6906000" />
-      <workItem from="1709662335039" duration="5601000" />
+      <workItem from="1709662335039" duration="6318000" />
     </task>
     <task id="LOCAL-00001" summary="Récupération des données pour afficher la liste de joueur mais problème au moment de l'affichage #2">
       <option name="closed" value="true" />
@@ -82,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709584326267</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fonctionnalité modifier réalisée #2">
+      <option name="closed" value="true" />
+      <created>1709672770370</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709672770370</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Récupération des données pour afficher la liste de joueur mais problème au moment de l'affichage #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Récupération des données pour afficher la liste de joueur mais problème au moment de l'affichage #2" />
+    <MESSAGE value="Fonctionnalité modifier réalisée #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fonctionnalité modifier réalisée #2" />
   </component>
 </project>
